@@ -4,7 +4,7 @@
 [![Total Downloads](https://img.shields.io/packagist/dt/toneflix-code/cuttly-laravel.svg?style=flat-square)](https://packagist.org/packages/toneflix-code/cuttly-laravel)
 ![GitHub Actions](https://github.com/toneflix-code/cuttly-laravel/actions/workflows/main.yml/badge.svg)
 
-This is where your description should go. Try and limit it to a paragraph or two, and maybe throw in a mention of what PSRs you support to avoid any confusion with users and contributors.
+Cutt.ly is a Link Management Platform with all features you need in one place. Shorten, brand, manage and track your links the easy way, this library aims to work around thier API implementation by providing a wrapper arround it.
 
 ## Installation
 
@@ -40,8 +40,8 @@ If you discover any security related issues, please email code@toneflix.com.ng i
 
 ## Credits
 
--   [Toneflix Code](https://github.com/toneflix-code)
--   [All Contributors](../../contributors)
+- [Toneflix Code](https://github.com/toneflix-code)
+- [All Contributors](../../contributors)
 
 ## License
 
