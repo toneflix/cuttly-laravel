@@ -1,7 +1,7 @@
 <?php
 
 namespace ToneflixCode\Cuttly\Build;
-use ToneflixCode\Cuttly\Exceptions\CuttlyException;
+use ToneflixCode\Cuttly\Exceptions\Cuttly_Exception;
 
 class Shorten
 {
@@ -54,7 +54,7 @@ class Shorten
     /**
      * Check the status of this request
      *
-     * @throws CuttlyException
+     * @throws Cuttly_Exception
      * @return Shorten
      */
     public function status(): Shorten
@@ -65,7 +65,7 @@ class Shorten
 
             if ($this->response->url->status != '7') 
             {
-                throw new CuttlyException(self::STATUS[$this->response->url->status], CuttlyException::getCode('shorten', $this->response->url->status));
+                throw new Cuttly_Exception(self::STATUS[$this->response->url->status], Cuttly_Exception::getCode('shorten', $this->response->url->status));
             }
         }
 

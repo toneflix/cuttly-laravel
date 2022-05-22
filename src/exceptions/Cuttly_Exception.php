@@ -2,7 +2,7 @@
 
 namespace ToneflixCode\Cuttly\Exceptions;
 
-class CuttlyException extends Exception 
+class Cuttly_Exception extends Exception 
 {
     const SHORTEN = [
         '1' => 304,
