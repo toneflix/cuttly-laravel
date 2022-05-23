@@ -41,7 +41,7 @@ class Status
         {
             if ($this->response['status'] != '7')
             {
-                throw new CuttlyException(Status::SHORTEN[$this->response['url']['status']], CuttlyException::setCode('shorten', $this->response['status']));
+                throw new CuttlyException(Status::SHORTEN[$this->response['status']], CuttlyException::setCode('shorten', $this->response['status']));
             }
         }
 
