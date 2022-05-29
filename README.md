@@ -12,9 +12,9 @@ Please refere to [Cutt.ly API Documentation](https://cutt.ly/cuttly-api) for det
 
 ## Requirements
 
--   [PHP >= 7.41](http://php.net/)
--   [Laravel 8|9](https://github.com/laravel/framework)
--   [Guzzle, PHP HTTP client >= 7.0](https://github.com/guzzle/guzzle)
+- [PHP >= 7.41](http://php.net/)
+- [Laravel 8|9](https://github.com/laravel/framework)
+- [Guzzle, PHP HTTP client >= 7.0](https://github.com/guzzle/guzzle)
 
 ## Installation
 
@@ -86,10 +86,10 @@ function shorten(
 
 ```json
 {
-    "status": "7",
-    "date": "2022-05-22",
-    "shortLink": "https://cutt.ly/aHKP2Bu",
-    "title": "cuttly-laravel"
+  "status": "7",
+  "date": "2022-05-22",
+  "shortLink": "https://cutt.ly/aHKP2Bu",
+  "title": "cuttly-laravel"
 }
 ```
 
@@ -169,7 +169,23 @@ $response = (new Cuttly)->changeTitle('https://cutt.ly/rHKG1eb', 15);
 
 ```json
 {
-    "status": "1"
+  "status": "1"
+}
+```
+
+### Error Handling
+
+Every request that returns an error code or response from the Cutt.ly API will throw a `ToneflixCode\Cuttly\Exceptions\CuttlyException` exception this is done to enable the devloper to elegantly handle errors in whichever way or manner they deem most appropriete or fit.
+
+```php
+use ToneflixCode\Cuttly\Cuttly;
+use ToneflixCode\Cuttly\Exceptions\CuttlyException;
+
+try {
+    $response = (new Cuttly)->shorten('https://github.com/toneflix/cuttly-laravel');
+    dd($response);
+} catch (CuttlyException $th) {
+    dd($th->getMessage());
 }
 ```
 
@@ -193,8 +209,8 @@ If you discover any security related issues, please email code@toneflix.com.ng i
 
 ## Credits
 
--   [Toneflix Code](https://github.com/toneflix-code)
--   [All Contributors](../../contributors)
+- [Toneflix Code](https://github.com/toneflix-code)
+- [All Contributors](../../contributors)
 
 ## License
 
