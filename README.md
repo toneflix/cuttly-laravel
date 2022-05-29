@@ -175,7 +175,7 @@ $response = (new Cuttly)->changeTitle('https://cutt.ly/rHKG1eb', 15);
 
 ### Error Handling
 
-Every request that returns an error code or response from the Cutt.ly API will throw a `ToneflixCode\Cuttly\Exceptions\CuttlyException` exception this is done to enable the devloper to elegantly handle errors in whichever way or manner they deem most appropriete or fit.
+Every request that returns an error code or response from the Cutt.ly API will throw a `ToneflixCode\Cuttly\Exceptions\CuttlyException` exception this is done to enable the developer to elegantly handle errors in whichever way or manner they deem most appropriate or fit.
 
 ```php
 use ToneflixCode\Cuttly\Cuttly;
