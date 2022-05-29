@@ -1,7 +1,7 @@
 {
     "name": "toneflix-code/cuttly-laravel",
     "description": "A Laravel API wrapper for Cutt.ly API.",
-    "version": "1.0.0",
+    "version": "1.0.2",
     "keywords": [
         "toneflix-code",
         "cuttly-laravel"
