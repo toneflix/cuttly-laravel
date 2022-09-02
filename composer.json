@@ -6,7 +6,7 @@
         "toneflix-code",
         "cuttly-laravel"
     ],
-    "homepage": "https://github.com/toneflix-code/cuttly-laravel",
+    "homepage": "https://github.com/toneflix/cuttly-laravel",
     "license": "MIT",
     "type": "library",
     "authors": [
