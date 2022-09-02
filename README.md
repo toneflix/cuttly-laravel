@@ -209,7 +209,7 @@ If you discover any security related issues, please email code@toneflix.com.ng i
 
 ## Credits
 
-- [Toneflix Code](https://github.com/toneflix-code)
+- [Toneflix Code](https://github.com/toneflix)
 - [All Contributors](../../contributors)
 
 ## License
