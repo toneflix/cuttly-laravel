@@ -58,13 +58,13 @@ CUTTLY_KEY=your-cutt.ly API key
 use ToneflixCode\Cuttly\Cuttly;
 
 // Default
-$response = (new Cuttly)->shorten('https://github.com/toneflix/cuttly-laravel');
+$response = (new Cuttly())->shorten('https://github.com/toneflix/cuttly-laravel');
 
 // With Name
-$response = (new Cuttly)->shorten('https://github.com/toneflix/cuttly-laravel', 'cuttly-laravel');
+$response = (new Cuttly())->shorten('https://github.com/toneflix/cuttly-laravel', 'cuttly-laravel');
 
 // No Title | Public
-$response = (new Cuttly)->shorten('https://github.com/toneflix/cuttly-laravel', 'cuttly-laravel', true, true);
+$response = (new Cuttly())->shorten('https://github.com/toneflix/cuttly-laravel', 'cuttly-laravel', true, true);
 ```
 
 #### Parameters
@@ -95,10 +95,10 @@ function shorten(
 use ToneflixCode\Cuttly\Cuttly;
 
 // Path
-$response = (new Cuttly)->delete('rHKG1eb');
+$response = (new Cuttly())->delete('rHKG1eb');
 
 // Link
-$response = (new Cuttly)->delete('https://cutt.ly/rHKG1eb');
+$response = (new Cuttly())->delete('https://cutt.ly/rHKG1eb');
 ```
 
 ### Change the name of a link
@@ -107,10 +107,10 @@ $response = (new Cuttly)->delete('https://cutt.ly/rHKG1eb');
 use ToneflixCode\Cuttly\Cuttly;
 
 // Path
-$response = (new Cuttly)->changeName('rHKG1eb', 'anewname');
+$response = (new Cuttly())->changeName('rHKG1eb', 'anewname');
 
 // Link
-$response = (new Cuttly)->changeName('https://cutt.ly/rHKG1eb', 'anewname');
+$response = (new Cuttly())->changeName('https://cutt.ly/rHKG1eb', 'anewname');
 ```
 
 ### Add a tag to a link
@@ -119,10 +119,10 @@ $response = (new Cuttly)->changeName('https://cutt.ly/rHKG1eb', 'anewname');
 use ToneflixCode\Cuttly\Cuttly;
 
 // Path
-$response = (new Cuttly)->addTag('rHKG1eb', 'atag');
+$response = (new Cuttly())->addTag('rHKG1eb', 'atag');
 
 // Link
-$response = (new Cuttly)->addTag('https://cutt.ly/rHKG1eb', 'atag');
+$response = (new Cuttly())->addTag('https://cutt.ly/rHKG1eb', 'atag');
 ```
 
 ### Change the source url of the shortened link.
@@ -131,10 +131,10 @@ $response = (new Cuttly)->addTag('https://cutt.ly/rHKG1eb', 'atag');
 use ToneflixCode\Cuttly\Cuttly;
 
 // Path
-$response = (new Cuttly)->changeUrl('rHKG1eb', 'https://github.com/toneflix-code/cuttly-laravel');
+$response = (new Cuttly())->changeUrl('rHKG1eb', 'https://github.com/toneflix-code/cuttly-laravel');
 
 // Link
-$response = (new Cuttly)->changeUrl('https://cutt.ly/rHKG1eb', 'https://github.com/toneflix-code/cuttly-laravel');
+$response = (new Cuttly())->changeUrl('https://cutt.ly/rHKG1eb', 'https://github.com/toneflix-code/cuttly-laravel');
 ```
 
 ### Change the title of the shortened link.
@@ -143,10 +143,10 @@ $response = (new Cuttly)->changeUrl('https://cutt.ly/rHKG1eb', 'https://github.c
 use ToneflixCode\Cuttly\Cuttly;
 
 // Path
-$response = (new Cuttly)->changeTitle('rHKG1eb', 'A new title');
+$response = (new Cuttly())->changeTitle('rHKG1eb', 'A new title');
 
 // Link
-$response = (new Cuttly)->changeTitle('https://cutt.ly/rHKG1eb', 'A new title');
+$response = (new Cuttly())->changeTitle('https://cutt.ly/rHKG1eb', 'A new title');
 ```
 
 ### Set a unique stat count for a short link
@@ -155,10 +155,10 @@ $response = (new Cuttly)->changeTitle('https://cutt.ly/rHKG1eb', 'A new title');
 use ToneflixCode\Cuttly\Cuttly;
 
 // Path
-$response = (new Cuttly)->changeTitle('rHKG1eb', 15);
+$response = (new Cuttly())->changeTitle('rHKG1eb', 15);
 
 // Link
-$response = (new Cuttly)->changeTitle('https://cutt.ly/rHKG1eb', 15);
+$response = (new Cuttly())->changeTitle('https://cutt.ly/rHKG1eb', 15);
 ```
 
 #### Response
@@ -178,7 +178,7 @@ use ToneflixCode\Cuttly\Cuttly;
 use ToneflixCode\Cuttly\Exceptions\CuttlyException;
 
 try {
-    $response = (new Cuttly)->shorten('https://github.com/toneflix/cuttly-laravel');
+    $response = (new Cuttly())->shorten('https://github.com/toneflix/cuttly-laravel');
     dd($response);
 } catch (CuttlyException $th) {
     dd($th->getMessage());
