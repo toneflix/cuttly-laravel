@@ -1,7 +1,7 @@
 {
     "name": "toneflix-code/cuttly-laravel",
     "description": "A Laravel API wrapper for Cutt.ly API.",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "keywords": [
         "toneflix-code",
         "cuttly-laravel"
@@ -17,8 +17,8 @@
         }
     ],
     "require": {
-        "php": "^7.4|^8.0",
-        "illuminate/support": "^8.0|^9.0",
+        "php": "^8.0|^8.1",
+        "illuminate/support": "^8.0|^9.0|^10.0",
         "guzzlehttp/guzzle": "^7.0"
     },
     "require-dev": {
