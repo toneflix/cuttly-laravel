@@ -1,10 +1,6 @@
 # Very short description of the package
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/toneflix-code/cuttly-laravel.svg?style=flat-square)](https://packagist.org/packages/toneflix-code/cuttly-laravel)
-[![Total Downloads](https://img.shields.io/packagist/dt/toneflix-code/cuttly-laravel.svg?style=flat-square)](https://packagist.org/packages/toneflix-code/cuttly-laravel)
-
-[![Laravel8|9](https://img.shields.io/badge/Laravel-8|9-orange.svg)](http://laravel.com)
-[![License](https://img.shields.io/github/license/mashape/apistatus.svg)](https://packagist.org/packages/toneflix-code/cuttly-laravel)
+[![Latest Stable Version](http://poser.pugx.org/toneflix-code/cuttly-laravel/v)](https://packagist.org/packages/toneflix-code/cuttly-laravel) [![Total Downloads](http://poser.pugx.org/toneflix-code/cuttly-laravel/downloads)](https://packagist.org/packages/toneflix-code/cuttly-laravel) [![Latest Unstable Version](http://poser.pugx.org/toneflix-code/cuttly-laravel/v/unstable)](https://packagist.org/packages/toneflix-code/cuttly-laravel) [![License](http://poser.pugx.org/toneflix-code/cuttly-laravel/license)](https://packagist.org/packages/toneflix-code/cuttly-laravel) [![PHP Version Require](http://poser.pugx.org/toneflix-code/cuttly-laravel/require/php)](https://packagist.org/packages/toneflix-code/cuttly-laravel)
 
 Cutt.ly is a Link Management Platform with all features you need in one place. Shorten, brand, manage and track your links the easy way, this library aims to work around thier API implementation by providing a wrapper arround it.
 
