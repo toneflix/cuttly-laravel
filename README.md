@@ -8,8 +8,8 @@ Please refere to [Cutt.ly API Documentation](https://cutt.ly/cuttly-api) for det
 
 ## Requirements
 
-- [PHP >= 7.41](http://php.net/)
-- [Laravel 8|9](https://github.com/laravel/framework)
+- [PHP >= 8.0](http://php.net/)
+- [Laravel 8|9|10](https://github.com/laravel/framework)
 - [Guzzle, PHP HTTP client >= 7.0](https://github.com/guzzle/guzzle)
 
 ## Installation
@@ -20,7 +20,7 @@ You can install the package via composer:
 composer require toneflix-code/cuttly-laravel
 ```
 
-#### Service Provider & Facade (Optional on Laravel 5.5+)
+#### Service Provider & Facade (Optional)
 
 Register provider and facade on your `config/app.php` file.
 
