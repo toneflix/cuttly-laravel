@@ -1,4 +1,4 @@
-# Very short description of the package
+# Cutt.ly Laravel
 
 [![Latest Stable Version](http://poser.pugx.org/toneflix-code/cuttly-laravel/v)](https://packagist.org/packages/toneflix-code/cuttly-laravel) [![Total Downloads](http://poser.pugx.org/toneflix-code/cuttly-laravel/downloads)](https://packagist.org/packages/toneflix-code/cuttly-laravel) [![Latest Unstable Version](http://poser.pugx.org/toneflix-code/cuttly-laravel/v/unstable)](https://packagist.org/packages/toneflix-code/cuttly-laravel) [![License](http://poser.pugx.org/toneflix-code/cuttly-laravel/license)](https://packagist.org/packages/toneflix-code/cuttly-laravel) [![PHP Version Require](http://poser.pugx.org/toneflix-code/cuttly-laravel/require/php)](https://packagist.org/packages/toneflix-code/cuttly-laravel)
 
