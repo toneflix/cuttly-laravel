@@ -28,10 +28,7 @@ class CuttlyServiceProvider extends ServiceProvider
 
         // Register the main class to use with the facade
         $this->app->singleton('cuttly-laravel', function () {
-            return new Cuttly(
-                apiKey: config('cuttly.key'),
-                teamApiKey: config('cuttly.team_key'),
-            );
+            return new Cuttly();
         });
     }
 }

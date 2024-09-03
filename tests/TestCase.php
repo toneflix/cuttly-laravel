@@ -29,6 +29,11 @@ abstract class TestCase extends Orchestra
         );
     }
 
+    public function getEnvironmentSetUp($app)
+    {
+        loadEnv();
+    }
+
     protected function defineEnvironment($app)
     {
         tap($app['config'], function (Repository $config) {

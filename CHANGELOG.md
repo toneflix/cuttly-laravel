@@ -1,11 +1,16 @@
 # Changelog
 
-All notable changes to `laravel-resource-modifier` will be documented in this file
+All notable changes to `cuttly-laravel` will be documented in this file
 
-## v1.0.0 - 2024-08-28
+## v2.0.0 - 2024-09-03
 
-**Full Changelog**: https://github.com/toneflix/laravel-resource-modifier/commits/1.0.0
+- Complete Rewrite of the package
+- Remove support for Laravel ^8.0
+- Add support for Laravel ^11.0
+- Flunent chainable methods
+- Improved error handling
+- Separate concerns to a separate php library
 
-## 1.0.0 - 201X-XX-XX
+## v1.0.0 - 2022-05-22
 
-- initial release
+Initial Release
