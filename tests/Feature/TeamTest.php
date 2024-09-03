@@ -9,7 +9,7 @@ beforeEach(function () {
 test('can shorten link', function () {
     $cuttly = new Cuttly;
 
-    $create = $cuttly->team()->noTitle()->public()->name('john'.rand())->shorten($this->link);
+    $create = $cuttly->team()->noTitle()->public()->name('john' . rand())->shorten($this->link);
     $cuttly->team()->delete($create->shortLink);
 
     expect($create->fullLink)->toBe($this->link);
@@ -19,12 +19,12 @@ test('can shorten link', function () {
  * Test if links can be edited
  */
 test('can edit link', function () {
-    $name = 'john'.rand();
+    $name = 'john' . rand();
     $cuttly = new Cuttly;
 
-    $create = $cuttly->team()->noTitle()->public()->name('john1'.rand())->shorten($this->link);
+    $create = $cuttly->team()->noTitle()->public()->name('john1' . rand())->shorten($this->link);
     $edit = $cuttly->team()->noTitle()->name($name)->edit($create->shortLink);
-    $cuttly->team()->delete(explode('john', $create->shortLink)[0].$name);
+    $cuttly->team()->delete(explode('john', $create->shortLink)[0] . $name);
 
     expect($edit->status)->toBe(1);
 }); //->skip('temporarily disabled but it works.');
@@ -35,7 +35,7 @@ test('can edit link', function () {
 test('can delete link', function () {
     $cuttly = new Cuttly;
 
-    $create = $cuttly->team()->noTitle()->public()->name('john2'.rand())->shorten($this->link);
+    $create = $cuttly->team()->noTitle()->public()->name('john2' . rand())->shorten($this->link);
     $delete = $cuttly->team()->delete($create->shortLink);
 
     expect($delete->status)->toBe(1);
@@ -47,7 +47,7 @@ test('can delete link', function () {
 test('can get stats', function () {
     $cuttly = new Cuttly;
 
-    $create = $cuttly->team()->noTitle()->public()->name('john3'.rand())->shorten($this->link);
+    $create = $cuttly->team()->noTitle()->public()->name('john3' . rand())->shorten($this->link);
     $stats = $cuttly->team()->stats($create->shortLink);
     $cuttly->team()->delete($create->shortLink);
 

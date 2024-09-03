@@ -9,7 +9,7 @@ beforeEach(function () {
 test('can shorten link', function () {
     $cuttly = new Cuttly;
 
-    $create = $cuttly->regular()->noTitle()->public()->name('john'.rand())->shorten($this->link);
+    $create = $cuttly->regular()->noTitle()->public()->name('john' . rand())->shorten($this->link);
     $cuttly->regular()->delete($create->shortLink);
 
     expect($create->fullLink)->toBe($this->link);
@@ -28,12 +28,12 @@ test('can shorten link with minimal params', function () {
  * Test if links can be edited
  */
 test('can edit link', function () {
-    $name = 'john'.rand();
+    $name = 'john' . rand();
     $cuttly = new Cuttly;
 
-    $create = $cuttly->regular()->noTitle()->public()->name('john1'.rand())->shorten($this->link);
+    $create = $cuttly->regular()->noTitle()->public()->name('john1' . rand())->shorten($this->link);
     $edit = $cuttly->regular()->noTitle()->name($name)->edit($create->shortLink);
-    $cuttly->regular()->delete(explode('john', $create->shortLink)[0].$name);
+    $cuttly->regular()->delete(explode('john', $create->shortLink)[0] . $name);
 
     expect($edit->status)->toBe(1);
 }); //->skip('temporarily disabled but it works.');
@@ -44,7 +44,7 @@ test('can edit link', function () {
 test('can delete link', function () {
     $cuttly = new Cuttly;
 
-    $create = $cuttly->regular()->noTitle()->public()->name('john2'.rand())->shorten($this->link);
+    $create = $cuttly->regular()->noTitle()->public()->name('john2' . rand())->shorten($this->link);
     $delete = $cuttly->regular()->delete($create->shortLink);
 
     expect($delete->status)->toBe(1);
@@ -56,7 +56,7 @@ test('can delete link', function () {
 test('can get stats', function () {
     $cuttly = new Cuttly;
 
-    $create = $cuttly->regular()->noTitle()->public()->name('john2'.rand())->shorten($this->link);
+    $create = $cuttly->regular()->noTitle()->public()->name('john3' . rand())->shorten($this->link);
     $stats = $cuttly->regular()->stats($create->shortLink);
     $cuttly->regular()->delete($create->shortLink);
 
