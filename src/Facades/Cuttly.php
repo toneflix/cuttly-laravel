@@ -1,6 +1,6 @@
 <?php
 
-namespace ToneflixCode\Cuttly;
+namespace ToneflixCode\Cuttly\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\Facade;
  * @method static \ToneflixCode\CuttlyPhp\Apis\CuttlyTeam team()
  * @method static \ToneflixCode\CuttlyPhp\Apis\CuttlyRegular regular()
  */
-class CuttlyFacade extends Facade
+class Cuttly extends Facade
 {
     /**
      * Get the registered name of the component.

@@ -1,6 +1,6 @@
 <?php
 
-use ToneflixCode\Cuttly\CuttlyFacade as Cuttly;
+use ToneflixCode\Cuttly\Facades\Cuttly;
 
 beforeEach(function () {
     $this->link = 'https://facebook.com/marxemi';

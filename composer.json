@@ -75,7 +75,7 @@
         "ToneflixCode\\Cuttly\\CuttlyServiceProvider"
       ],
       "aliases": {
-        "Cuttly": "ToneflixCode\\Cuttly\\Facades\\CuttlyFacade"
+        "Cuttly": "ToneflixCode\\Cuttly\\Facades\\Cuttly"
       }
     }
   }
