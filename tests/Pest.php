@@ -29,7 +29,7 @@ uses(TestCase::class)->in(__DIR__);
 function loadEnv()
 {
     // Load the .env file
-    $dotenv = \Dotenv\Dotenv::createImmutable(__DIR__ . '/..');
+    $dotenv = \Dotenv\Dotenv::createImmutable(__DIR__.'/..');
 
     $dotenv->safeLoad();
 }

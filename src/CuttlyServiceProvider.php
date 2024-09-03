@@ -13,7 +13,7 @@ class CuttlyServiceProvider extends ServiceProvider
     {
         if ($this->app->runningInConsole()) {
             $this->publishes([
-                __DIR__ . '/../config/config.php' => config_path('cuttly.php'),
+                __DIR__.'/../config/config.php' => config_path('cuttly.php'),
             ], ['cuttly', 'cuttly-config', 'config']);
         }
     }
@@ -24,11 +24,11 @@ class CuttlyServiceProvider extends ServiceProvider
     public function register()
     {
         // Automatically apply the package configuration
-        $this->mergeConfigFrom(__DIR__ . '/../config/config.php', 'cuttly');
+        $this->mergeConfigFrom(__DIR__.'/../config/config.php', 'cuttly');
 
         // Register the main class to use with the facade
         $this->app->singleton('cuttly-laravel', function () {
-            return new Cuttly();
+            return new Cuttly;
         });
     }
 }
