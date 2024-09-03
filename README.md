@@ -24,6 +24,10 @@ You can install the package via composer:
 composer require toneflix-code/cuttly-laravel
 ```
 
+## Upgrading
+
+If you're coming from verson 1.x, you may not be able to upgrade to 2.x as version is a complete rewrite of the package, with almost full support of entire cutt.ly API, version 1.x has been moved to the v1.x.x branch and will continue to recieve security patches and features till the end of 2025.
+
 ## Package Discovery
 
 Laravel automatically discovers and publishes service providers but optionally after you have installed Laravel Fileable, open your Laravel config file if you use Laravel below 11, `config/app.php` and add the following lines.
