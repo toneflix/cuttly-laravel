@@ -1,0 +1,82 @@
+{
+  "name": "toneflix-code/cuttly-laravel",
+  "description": "A Laravel API wrapper for Cutt.ly API.",
+  "keywords": [
+    "api",
+    "toneflix-code",
+    "cuttly-php",
+    "cuttly-laravel",
+    "cuttly",
+    "links",
+    "link shortening"
+  ],
+  "homepage": "https://github.com/toneflix/cuttly-laravel",
+  "license": "MIT",
+  "type": "library",
+  "authors": [
+    {
+      "name": "Toneflix Code",
+      "email": "code@toneflix.com.ng",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": "^8.1|^8.2|^8.3",
+    "illuminate/support": "^9.0|^10.0|^11.0",
+    "toneflix-code/cuttly-php": "^1.0"
+  },
+  "require-dev": {
+    "illuminate/contracts": "^9.0|^10.0|^11.0",
+    "laravel/pint": "^1.15",
+    "orchestra/testbench": "^7.4|^8.0|^9.4",
+    "pestphp/pest": "^2.34",
+    "pestphp/pest-plugin-laravel": "^2.4",
+    "imanghafoori/php-imports-analyzer": "^1.0",
+    "phpstan/phpstan": "^1.12"
+  },
+  "autoload": {
+    "psr-4": {
+      "ToneflixCode\\Cuttly\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "ToneflixCode\\Cuttly\\Tests\\": "tests",
+      "ToneflixCode\\Cuttly\\Tests\\Database\\Factories\\": "tests/database/factories"
+    }
+  },
+  "scripts": {
+    "post-autoload-dump": "@composer run prepare",
+    "clear": "@php vendor/bin/testbench package:purge-laravel-pay-pocket --ansi",
+    "prepare": "@php vendor/bin/testbench package:discover --ansi",
+    "build": [
+      "@composer run prepare",
+      "@php vendor/bin/testbench workbench:build --ansi"
+    ],
+    "start": [
+      "Composer\\Config::disableProcessTimeout",
+      "@composer run build",
+      "@php vendor/bin/testbench serve"
+    ],
+    "analyse": "vendor/bin/phpstan analyse",
+    "test": "XDEBUG_MODE=coverage ./vendor/bin/pest --coverage --display-errors --testdox",
+    "test-coverage": "vendor/bin/pest --coverage",
+    "format": "vendor/bin/pint"
+  },
+  "config": {
+    "sort-packages": true,
+    "allow-plugins": {
+      "pestphp/pest-plugin": true
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "ToneflixCode\\Cuttly\\CuttlyServiceProvider"
+      ],
+      "aliases": {
+        "Cuttly": "ToneflixCode\\Cuttly\\Facades\\Cuttly"
+      }
+    }
+  }
+}
