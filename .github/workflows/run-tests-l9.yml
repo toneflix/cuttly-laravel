@@ -47,6 +47,8 @@ jobs:
         run: ./vendor/bin/pest --ci --coverage --display-errors --testdox
         env:
           XDEBUG_MODE: coverage
+          CUTTLY_API_KEY: ${{ secrets.CUTTLY_API_KEY }}
+          CUTTLY_TEAM_API_KEY: ${{ secrets.CUTTLY_TEAM_API_KEY }}
 
       - name: Upload coverage reports to Codecov
         uses: codecov/codecov-action@v4.5.0
