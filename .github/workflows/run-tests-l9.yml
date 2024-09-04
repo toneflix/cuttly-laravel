@@ -1,6 +1,12 @@
 name: Run Tests L9
 
-on: workflow_call
+on:
+  workflow_call:
+    secrets:
+      CUTTLY_API_KEY:
+        required: true
+      CUTTLY_TEAM_API_KEY:
+        required: true
 
 jobs:
   test:

@@ -1,6 +1,12 @@
 name: Run Tests L10
 
-on: workflow_call
+on:
+  workflow_call:
+    secrets:
+      CUTTLY_API_KEY:
+        required: true
+      CUTTLY_TEAM_API_KEY:
+        required: true
 
 jobs:
   test:
@@ -65,5 +71,8 @@ jobs:
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
           files: ./build/logs/clover.xml
-  call-run-tests-l9:
-    uses: ./.github/workflows/run-tests-l9.yml
+      call-run-tests-l9:
+        uses: ./.github/workflows/run-tests-l9.yml
+        secrets:
+          CUTTLY_API_KEY: ${{ secrets.CUTTLY_API_KEY }}
+          CUTTLY_TEAM_API_KEY: ${{ secrets.CUTTLY_TEAM_API_KEY }}
