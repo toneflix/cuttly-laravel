@@ -74,3 +74,8 @@ jobs:
     secrets:
       CUTTLY_API_KEY: ${{ secrets.CUTTLY_API_KEY }}
       CUTTLY_TEAM_API_KEY: ${{ secrets.CUTTLY_TEAM_API_KEY }}
+  call-run-tests-l9:
+    uses: ./.github/workflows/run-tests-l9.yml
+    secrets:
+      CUTTLY_API_KEY: ${{ secrets.CUTTLY_API_KEY }}
+      CUTTLY_TEAM_API_KEY: ${{ secrets.CUTTLY_TEAM_API_KEY }}
