@@ -1,6 +1,6 @@
 name: Run Tests L9
 
-on: workflow_dispatch
+on: workflow_call
 
 jobs:
   test:

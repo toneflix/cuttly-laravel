@@ -69,3 +69,5 @@ jobs:
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
           files: ./build/logs/clover.xml
+  call-run-tests-l10:
+    uses: ./.github/workflows/run-tests-l10.yml

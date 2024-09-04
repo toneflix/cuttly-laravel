@@ -1,6 +1,6 @@
 # Cutt.ly Laravel
 
-[![Test & Lint](https://github.com/toneflix/cuttly-laravel/actions/workflows/run-tests.yml/badge.svg?branch=main)](https://github.com/toneflix/cuttly-laravel/actions/workflows/run-tests.yml)
+[![Run Tests L11](https://github.com/toneflix/cuttly-laravel/actions/workflows/run-tests-l11.yml/badge.svg)](https://github.com/toneflix/cuttly-laravel/actions/workflows/run-tests-l11.yml)
 [![Latest Stable Version](https://img.shields.io/packagist/v/toneflix-code/cuttly-laravel.svg)](https://packagist.org/packages/toneflix-code/cuttly-laravel)
 [![Total Downloads](https://img.shields.io/packagist/dt/toneflix-code/cuttly-laravel.svg)](https://packagist.org/packages/toneflix-code/cuttly-laravel)
 [![License](https://img.shields.io/packagist/l/toneflix-code/cuttly-laravel.svg)](https://packagist.org/packages/toneflix-code/cuttly-laravel)

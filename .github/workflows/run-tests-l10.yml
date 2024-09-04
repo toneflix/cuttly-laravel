@@ -1,6 +1,6 @@
 name: Run Tests L10
 
-on: workflow_dispatch
+on: workflow_call
 
 jobs:
   test:
@@ -65,3 +65,5 @@ jobs:
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
           files: ./build/logs/clover.xml
+  call-run-tests-l9:
+    uses: ./.github/workflows/run-tests-l9.yml
