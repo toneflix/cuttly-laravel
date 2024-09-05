@@ -1,4 +1,4 @@
-name: Run Tests L10
+name: Run Tests 10
 
 on:
   workflow_call:
@@ -21,8 +21,7 @@ jobs:
         include:
           - laravel: 10.*
             testbench: 8.*
-            php: 8.1
-
+            php: 8.2
     name: P${{ matrix.php }} - L${{ matrix.laravel }} - ${{ matrix.stability }} - ${{ matrix.os }}
 
     steps:
