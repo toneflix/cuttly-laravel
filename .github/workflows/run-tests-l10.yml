@@ -1,4 +1,4 @@
-name: Run Tests 10
+name: Run Tests L10
 
 on:
   workflow_call:
